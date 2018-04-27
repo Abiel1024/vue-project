@@ -12,9 +12,7 @@ let myRouter = new Router({
 myRouter.beforeEach((to, from, next) => {
   window.aaaa = LoadingBar
   LoadingBar.start()
-  setTimeout(() => {
-    next()
-  }, 1000)
+  next()
 })
 myRouter.afterEach((to, from) => {
   LoadingBar.finish()
