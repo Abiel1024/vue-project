@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import store from './store'
 import './main.less'
+import request from './util/request'
 import {
   Button,
   Icon,
@@ -36,6 +37,7 @@ Vue.component('InputNumber', InputNumber)
 Vue.component('Modal', Modal)
 Message.config({top: 24, duration: 3})
 Vue.prototype.$Message = Message
+Vue.prototype.$http = request
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
