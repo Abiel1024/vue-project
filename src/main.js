@@ -6,9 +6,8 @@ import router from './router'
 import store from './store'
 import './main.less'
 import request from './util/request'
-import setGlobalComponents from './util/setGlobalComponents.js'
+import './util/setGlobalComponents.js'
 
-setGlobalComponents(Vue)
 Vue.prototype.$http = request
 Vue.config.productionTip = false
 
