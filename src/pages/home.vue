@@ -1,5 +1,7 @@
 <template>
-  <div>home page</div>
+  <div>
+    <Button type="primary">test</Button>
+  </div>
 </template>
 
 <script>
