@@ -1,6 +1,6 @@
 const state = {
   userInfo: {
-    name: ''
+    name: '默认用户姓名'
   }
 }
 const getters = {
@@ -15,13 +15,10 @@ const mutations = {
 }
 const actions = {
   getUserInfo(context) {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
       setTimeout(() => {
-        context.commit('setUserInfo', {
-          name: 'test',
-          age: 15
-        })
-        resolve()
+        context.commit('setUserInfo', {name: '用户真实姓名'})
+        resolve({name: '用户真实姓名'})
       }, 1000)
     })
   }
