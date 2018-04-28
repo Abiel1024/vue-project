@@ -1,5 +1,5 @@
 import axios from 'axios'
-import Router from '../router'
+// import Router from '../router'
 
 axios.interceptors.request.use(config => {
   return config
@@ -8,11 +8,12 @@ axios.interceptors.request.use(config => {
 })
 
 axios.interceptors.response.use(response => {
-  if (response.status === 200) {
+  /* 检测某种状态进行重定向
+  if (response.status === 302) {
     Router.push({
       name: 'home'
     })
-  }
+  } */
   return response
 }, error => {
   return Promise.resolve(error.response)

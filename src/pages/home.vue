@@ -2,7 +2,7 @@
   <div>
     <p v-text="userInfo.name"></p>
     <Button type="primary" @click="getUserInfo">获取用户信息</Button>
-    <Button type="primary" @click="fChangePath">test</Button>
+    <Button type="primary" @click="fChangePath">跳转到operation</Button>
   </div>
 </template>
 
