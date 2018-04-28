@@ -2,7 +2,7 @@ const routes = [
   {
     path: '/',
     name: 'index',
-    component: resolve => require(['../pages'], resolve)
+    component: resolve => require(['../views'], resolve)
   },
   {
     path: 'login',
@@ -12,12 +12,12 @@ const routes = [
       {
         path: '/home',
         name: 'home',
-        component: resolve => require(['../pages/home'], resolve)
+        component: resolve => require(['../views/home'], resolve)
       },
       {
         path: '/operation',
         name: 'operation',
-        component: resolve => require(['../pages/operation'], resolve)
+        component: resolve => require(['../views/operation'], resolve)
       }
     ]
   }
