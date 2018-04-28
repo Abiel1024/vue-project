@@ -48,7 +48,7 @@ export default {
   post(url, data) {
     return axios({
       method: 'post',
-      baseURL: 'https://cnodejs.org/api/v1',
+      baseURL: 'https://you.host.com',
       url,
       data: data,
       timeout: 10000,
@@ -69,7 +69,7 @@ export default {
   get(url, params) {
     return axios({
       method: 'get',
-      baseURL: 'http://oa.qiein.com/hm-crm',
+      baseURL: 'http://you.host.com',
       url,
       params, // get 请求时带的参数
       timeout: 10000,
