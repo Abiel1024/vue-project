@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Button type="primary">test</Button>
+    <Button type="primary" @click="fChangePath">test</Button>
   </div>
 </template>
 
@@ -10,7 +10,13 @@
     data() {
       return {}
     },
-    methods: {}
+    methods: {
+      fChangePath() {
+        this.$router.push({
+          name: 'operation'
+        })
+      }
+    }
   }
 </script>
 <style scoped>
