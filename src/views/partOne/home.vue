@@ -1,5 +1,5 @@
 <template>
-  <div class="main">
+  <div class="content">
     <p class="user_name">
       <span>用户姓名：</span>
       <span v-text="userInfo.name"></span>
@@ -40,10 +40,11 @@
   }
 </script>
 <style scoped>
-  .main {
-    text-align: center;
+  .content {
     height: calc(100% - 60px);
     background: #ddd;
+    text-align: center;
+    border: 1px solid transparent;
   }
 
   .user_name {
