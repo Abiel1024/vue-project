@@ -1,6 +1,9 @@
 <template>
-  <div>
-    <p v-text="userInfo.name"></p>
+  <div class="main">
+    <p class="user_name">
+      <span>用户姓名：</span>
+      <span v-text="userInfo.name"></span>
+    </p>
     <Button type="primary" @click="getUserInfo">获取用户信息</Button>
     <Button type="primary" @click="fChangePath">跳转到operation</Button>
   </div>
@@ -32,5 +35,16 @@
   }
 </script>
 <style scoped>
+  .main {
+    text-align: center;
+    height: calc(100% - 60px);
+    background: #ddd;
+  }
 
+  .user_name {
+    margin: 10px;
+    font-size: 20px;
+    color: #333;
+    font-weight: bolder;
+  }
 </style>

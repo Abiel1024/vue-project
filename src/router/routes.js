@@ -5,19 +5,19 @@ const routes = [
     component: resolve => require(['../views'], resolve)
   },
   {
-    path: 'login',
-    name: 'login',
-    component: resolve => require(['../components/loginHead'], resolve),
+    path: 'partOne',
+    name: 'partOne',
+    component: resolve => require(['../views/partOne'], resolve),
     children: [
       {
         path: '/home',
         name: 'home',
-        component: resolve => require(['../views/home'], resolve)
+        component: resolve => require(['../views/partOne/home'], resolve)
       },
       {
         path: '/operation',
         name: 'operation',
-        component: resolve => require(['../views/operation'], resolve)
+        component: resolve => require(['../views/partOne/operation'], resolve)
       }
     ]
   }

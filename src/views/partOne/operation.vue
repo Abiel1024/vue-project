@@ -1,5 +1,8 @@
 <template>
-  <Button type="primary" @click="fChangePath">operation page</Button>
+  <div class="main">
+    <p>这里是operation page</p>
+    <Button type="primary" @click="fChangePath">返回home</Button>
+  </div>
 </template>
 
 <script>
@@ -18,5 +21,8 @@
   }
 </script>
 <style scoped>
-
+  .main {
+    font-size: 20px;
+    text-align: center;
+  }
 </style>

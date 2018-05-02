@@ -1,17 +1,12 @@
 <template>
-  <div class="hello">
-    <h1>头部信息</h1>
-    <router-view/>
-  </div>
+  <h1 class="header">头部通用组件</h1>
 </template>
 
 <script>
   export default {
-    name: 'HelloWorld',
+    name: 'loginHead',
     data() {
-      return {
-        msg: 'Welcome to Your Vue.js App'
-      }
+      return {}
     },
     methods: {
       async fetchData() {
@@ -27,3 +22,11 @@
     }
   }
 </script>
+<style scoped>
+  .header {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: darkseagreen;
+  }
+</style>
