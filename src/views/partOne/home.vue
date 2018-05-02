@@ -4,15 +4,20 @@
       <span>用户姓名：</span>
       <span v-text="userInfo.name"></span>
     </p>
-    <Button type="primary" @click="getUserInfo">获取用户信息</Button>
+    <Poptip trigger="hover" placement="bottom">
+      <Button type="primary" @click="getUserInfo">获取用户信息</Button>
+      <div slot="content">点击派发一个action，从而修改store中的值。</div>
+    </Poptip>
     <Button type="primary" @click="fChangePath">跳转到operation</Button>
   </div>
 </template>
 
 <script>
   import {mapGetters} from 'vuex'
+  import {Poptip} from 'iview'
 
   export default {
+    components: {Poptip},
     name: 'home',
     data() {
       return {}
