@@ -17,7 +17,7 @@
     methods: {}
   }
 </script>
-<style scoped>
+<style lang="less" scoped>
   .main {
     height: 100%;
   }

@@ -9,6 +9,10 @@
       <div slot="content">点击派发一个action，从而修改store中的值。</div>
     </Poptip>
     <Button type="primary" @click="fChangePath">跳转到operation</Button>
+    <div class="test_class">
+      <p>这里是p标签</p>
+      <h6>这里是h6标签</h6>
+    </div>
   </div>
 </template>
 
@@ -39,7 +43,7 @@
     }
   }
 </script>
-<style scoped>
+<style lang="less" scoped>
   .content {
     height: calc(100% - 60px);
     background: #ddd;
