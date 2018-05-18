@@ -17,6 +17,13 @@
   ],
   "plugins": [
     "transform-vue-jsx",
-    "transform-runtime"
+    "transform-runtime",
+    [
+      "import",
+      {
+        "libraryName": "iview",
+        "libraryDirectory": "src/components"
+      }
+    ]
   ]
 }
