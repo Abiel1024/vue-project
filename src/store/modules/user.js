@@ -1,6 +1,6 @@
 const state = {
   userInfo: {
-    name: '暂无'
+    name: 'user-暂无'
   }
 }
 const getters = {
