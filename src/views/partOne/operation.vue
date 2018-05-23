@@ -10,19 +10,19 @@
 </template>
 
 <script>
-  export default {
-    name: 'operation',
-    data() {
-      return {}
-    },
-    methods: {
-      fChangePath() {
-        this.$router.push(
-          {name: 'home'}
-        )
-      }
+export default {
+  name: 'operation',
+  data() {
+    return {}
+  },
+  methods: {
+    fChangePath() {
+      this.$router.push(
+        {name: 'home'}
+      )
     }
   }
+}
 </script>
 <style lang="less" scoped>
   .content {

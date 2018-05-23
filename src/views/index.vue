@@ -3,19 +3,19 @@
 </template>
 
 <script>
-  export default {
-    name: '',
-    data() {
-      return {}
-    },
-    methods: {
-      fToHome() {
-        this.$router.push({
-          name: 'home'
-        })
-      }
+export default {
+  name: '',
+  data() {
+    return {}
+  },
+  methods: {
+    fToHome() {
+      this.$router.push({
+        name: 'home'
+      })
     }
   }
+}
 </script>
 <style lang="less" scoped>
   .text {

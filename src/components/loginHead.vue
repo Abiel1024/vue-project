@@ -3,24 +3,24 @@
 </template>
 
 <script>
-  export default {
-    name: 'loginHead',
-    data() {
-      return {}
-    },
-    methods: {
-      async fetchData() {
-        let params = {
-          sig: '1111',
-          uid: '2222'
-        }
-        const data = await this.$http.get('public/getstaffinfo', params)
-        if (data.code === 100000) {
-          this.$Message.success(data.msg)
-        }
+export default {
+  name: 'loginHead',
+  data() {
+    return {}
+  },
+  methods: {
+    async fetchData() {
+      let params = {
+        sig: '1111',
+        uid: '2222'
+      }
+      const data = await this.$http.get('public/getstaffinfo', params)
+      if (data.code === 100000) {
+        this.$Message.success(data.msg)
       }
     }
   }
+}
 </script>
 <style lang="less" scoped>
   .header {

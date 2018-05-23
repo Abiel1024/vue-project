@@ -6,16 +6,16 @@
 </template>
 
 <script>
-  import oneHead from '../../components/loginHead'
+import oneHead from '../../components/loginHead'
 
-  export default {
-    components: {oneHead},
-    name: 'partOne',
-    data() {
-      return {}
-    },
-    methods: {}
-  }
+export default {
+  components: {oneHead},
+  name: 'partOne',
+  data() {
+    return {}
+  },
+  methods: {}
+}
 </script>
 <style lang="less" scoped>
   .main {
