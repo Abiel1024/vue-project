@@ -8,7 +8,7 @@ import './main.less'
 import request from './util/axios'
 import './util/iview.js' // import iview components on demand
 
-Vue.prototype.$http = request
+Vue.prototype.$axios = request
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

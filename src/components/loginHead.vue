@@ -14,7 +14,7 @@ export default {
         sig: '1111',
         uid: '2222'
       }
-      const data = await this.$http.get('public/getstaffinfo', params)
+      const data = await this.$axios.get('public/getUserInfo', params)
       if (data.code === 100000) {
         this.$Message.success(data.msg)
       }
