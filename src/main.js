@@ -5,8 +5,8 @@ import App from './App'
 import router from './router'
 import store from './store'
 import './main.less'
-import request from './util/request'
-import './util/setGlobalComponents.js'
+import request from './util/axios'
+import './util/iview.js' // import iview components on demand
 
 Vue.prototype.$http = request
 Vue.config.productionTip = false
