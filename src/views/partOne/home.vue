@@ -23,7 +23,7 @@ import {Poptip} from 'iview'
 export default {
   components: {Poptip},
   name: 'home',
-  data() {
+  data () {
     return {}
   },
   computed: {
@@ -32,12 +32,12 @@ export default {
     })
   },
   methods: {
-    fChangePath() {
+    fChangePath () {
       this.$router.push({
         name: 'operation'
       })
     },
-    async getUserInfo() {
+    async getUserInfo () {
       let result = await this.$store.dispatch('user/getUserInfo')
       console.log(result)
     }

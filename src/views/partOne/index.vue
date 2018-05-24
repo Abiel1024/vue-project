@@ -11,7 +11,7 @@ import oneHead from '../../components/loginHead'
 export default {
   components: {oneHead},
   name: 'partOne',
-  data() {
+  data () {
     return {}
   },
   methods: {}

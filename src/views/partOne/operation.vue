@@ -12,11 +12,11 @@
 <script>
 export default {
   name: 'operation',
-  data() {
+  data () {
     return {}
   },
   methods: {
-    fChangePath() {
+    fChangePath () {
       this.$router.push(
         {name: 'home'}
       )

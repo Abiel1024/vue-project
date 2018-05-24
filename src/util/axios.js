@@ -33,7 +33,7 @@ const checkStatus = response => {
   }
 }
 
-function checkCode(res) {
+function checkCode (res) {
   // 如果code异常(这里已经包括网络错误，服务器错误，后端抛出的错误)，可以弹出一个错误提示，告诉用户
   if (res.status === -404) {
     // console.log(res.msg)
@@ -46,7 +46,7 @@ function checkCode(res) {
 }
 
 export default {
-  post(url, data) {
+  post (url, data) {
     return axios({
       method: 'post',
       baseURL: 'https://you.host.com',
@@ -67,7 +67,7 @@ export default {
       }
     )
   },
-  get(url, params) {
+  get (url, params) {
     return axios({
       method: 'get',
       baseURL: '',

@@ -5,11 +5,11 @@
 <script>
 export default {
   name: '',
-  data() {
+  data () {
     return {}
   },
   methods: {
-    fToHome() {
+    fToHome () {
       this.$router.push({
         name: 'home'
       })

@@ -5,11 +5,11 @@
 <script>
 export default {
   name: 'loginHead',
-  data() {
+  data () {
     return {}
   },
   methods: {
-    async fetchData() {
+    async fetchData () {
       let params = {
         sig: '1111',
         uid: '2222'

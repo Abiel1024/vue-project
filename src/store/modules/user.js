@@ -9,12 +9,12 @@ const getters = {
   }
 }
 const mutations = {
-  setUserInfo(state, data) {
+  setUserInfo (state, data) {
     state.userInfo = data
   }
 }
 const actions = {
-  async getUserInfo(context) {
+  async getUserInfo (context) {
     let result = await new Promise((resolve) => {
       setTimeout(() => {
         context.commit('setUserInfo', {name: 'Abiel'})
