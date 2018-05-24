@@ -9,6 +9,11 @@ const state = {
     name: 'root-暂无'
   }
 }
+const getters = {
+  userInfo: state => {
+    return state.userInfo
+  }
+}
 const mutations = {
   setUserInfo(state, data) {
     state.userInfo = data
@@ -19,6 +24,7 @@ let option = {
     user
   },
   state,
+  getters,
   mutations
 }
 export default new Vuex.Store(option)

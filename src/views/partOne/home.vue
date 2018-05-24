@@ -27,7 +27,9 @@ export default {
     return {}
   },
   computed: {
-    ...mapGetters(['userInfo'])
+    ...mapGetters({
+      userInfo: 'user/userInfo'
+    })
   },
   methods: {
     fChangePath() {
@@ -36,8 +38,7 @@ export default {
       })
     },
     async getUserInfo() {
-      let result = await this.$store.dispatch('getUserInfo')
-      console.log('信息获取成功，在组件用也能看到哦')
+      let result = await this.$store.dispatch('user/getUserInfo')
       console.log(result)
     }
   }
