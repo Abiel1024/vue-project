@@ -19,12 +19,11 @@ const mutations = {
     state.userInfo = data
   }
 }
-let option = {
+export default new Vuex.Store({
   modules: {
     user
   },
   state,
   getters,
   mutations
-}
-export default new Vuex.Store(option)
+})

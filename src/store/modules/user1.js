@@ -1,5 +1,3 @@
-import user1 from './user1'
-
 const state = {
   userInfo: {
     name: 'user-暂无'
@@ -32,8 +30,5 @@ export default {
   state,
   mutations,
   getters,
-  actions,
-  modules: {
-    user1
-  }
+  actions
 }
