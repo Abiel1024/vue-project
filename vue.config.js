@@ -1,4 +1,5 @@
 module.exports = {
+  outputDir: process.env.outputDir,
   assetsDir: 'static',
   devServer: {
     open: false,
