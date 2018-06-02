@@ -7,6 +7,11 @@ module.exports = {
     port: 8000,
     https: false,
     hotOnly: false,
-    proxy: null // string | Object
+    proxy: {
+      '/api': {
+        target: 'http://127.0.0.1:8012',
+        changeOrigin: true
+      }
+    }
   }
 }
