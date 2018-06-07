@@ -19,7 +19,8 @@ const mutations = {
     state.userInfo = data
   }
 }
-export default new Vuex.Store({
+
+const myStore = new Vuex.Store({
   modules: {
     user
   },
@@ -27,3 +28,5 @@ export default new Vuex.Store({
   getters,
   mutations
 })
+
+export default myStore
