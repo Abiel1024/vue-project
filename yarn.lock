@@ -3892,9 +3892,9 @@ isstream@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
 
-iview@^2.14.1:
-  version "2.14.1"
-  resolved "https://registry.yarnpkg.com/iview/-/iview-2.14.1.tgz#7deb9e332755f1d01ecfe6732651508d8296733e"
+iview@^2.14.2:
+  version "2.14.2"
+  resolved "https://registry.yarnpkg.com/iview/-/iview-2.14.2.tgz#7f9b9f88a58cc06081c2393124b15df6cc0abfa5"
   dependencies:
     async-validator "^1.8.2"
     deepmerge "^2.1.0"
