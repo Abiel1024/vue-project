@@ -16,10 +16,10 @@
     "vuex": "^3.0.1"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.0.0-rc.2",
-    "@vue/cli-plugin-eslint": "^3.0.0-rc.2",
-    "@vue/cli-service": "^3.0.0-rc.2",
-    "@vue/eslint-config-standard": "^3.0.0-rc.2",
+    "@vue/cli-plugin-babel": "^3.0.0-beta.15",
+    "@vue/cli-plugin-eslint": "^3.0.0-beta.15",
+    "@vue/cli-service": "^3.0.0-beta.15",
+    "@vue/eslint-config-standard": "^3.0.0-rc.3",
     "babel-plugin-import": "^1.7.0",
     "less": "^3.0.4",
     "less-loader": "^4.1.0",
