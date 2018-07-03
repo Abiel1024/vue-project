@@ -1,2 +1,2 @@
 (window["webpackJsonp"]=window["webpackJsonp"]||[]).push([[3],{HksL:function(t,n,e){"use strict";e.r(n);var o=function(){var t=this,n=t.$createElement,e=t._self._c||n;return e("div",{staticClass:"text",on:{click:t.fToHome}},[t._v("这里是首页，点击可跳转到home页面")])},a=[],s={name:"",data:function(){return{}},methods:{fToHome:function(){this.$router.push({name:"home"})}}},c=s,u=(e("WK9t"),e("KHd+")),i=Object(u["a"])(c,o,a,!1,null,"b61b01d0",null);n["default"]=i.exports},WK9t:function(t,n,e){"use strict";var o=e("aShj"),a=e.n(o);a.a},aShj:function(t,n,e){}}]);
-//# sourceMappingURL=3.95e1f51f.js.map
+//# sourceMappingURL=3.cc0b9264.js.map
