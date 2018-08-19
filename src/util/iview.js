@@ -31,3 +31,7 @@ Vue.component('InputNumber', InputNumber)
 Vue.component('Modal', Modal)
 Message.config({top: 24, duration: 3})
 Vue.prototype.$Message = Message
+Vue.prototype.$IVIEW = {
+  size: 'default',
+  transfer: true
+}

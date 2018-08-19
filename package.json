@@ -1,5 +1,5 @@
 {
-  "name": "vue-cli-new",
+  "name": "githubVueProject",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -21,7 +21,7 @@
     "@vue/cli-service": "^3.0.0-rc.9",
     "@vue/eslint-config-standard": "^3.0.0-rc.9",
     "babel-plugin-import": "^1.8.0",
-    "less": "^3.8.0",
+    "less": "2.7.3",
     "less-loader": "^4.1.0",
     "vue-template-compiler": "^2.5.16"
   },
