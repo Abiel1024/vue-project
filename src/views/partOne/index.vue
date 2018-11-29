@@ -9,7 +9,7 @@
 import oneHead from '../../components/loginHead'
 
 export default {
-  components: {oneHead},
+  components: { oneHead },
   name: 'partOne',
   data () {
     return {}

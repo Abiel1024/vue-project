@@ -18,7 +18,7 @@ export default {
   methods: {
     fChangePath () {
       this.$router.push(
-        {name: 'home'}
+        { name: 'home' }
       )
     }
   }

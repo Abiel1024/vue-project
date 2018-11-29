@@ -17,11 +17,11 @@
 </template>
 
 <script>
-import {mapGetters} from 'vuex'
-import {Poptip} from 'iview'
+import { mapGetters } from 'vuex'
+import { Poptip } from 'iview'
 
 export default {
-  components: {Poptip},
+  components: { Poptip },
   name: 'home',
   data () {
     return {}
