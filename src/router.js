@@ -8,8 +8,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'login',
-      component: resolve => require(['./views/Login'], resolve)
+      name: 'index',
+      component: resolve => require(['./views'], resolve)
     },
     {
       path: 'partOne',
