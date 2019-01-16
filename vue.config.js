@@ -1,7 +1,7 @@
 module.exports = {
   outputDir: process.env.outputDir,
   assetsDir: 'static',
-  baseUrl: '/vue-project',
+  publicPath: '/vue-project',
   devServer: {
     open: false,
     host: '0.0.0.0',
