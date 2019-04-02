@@ -15,3 +15,4 @@ yarn build
 ## 检查代码格式并修复
 yarn lint
 ```
+<a href="https://996.icu"><img src="https://img.shields.io/badge/link-996.icu-red.svg" alt="996.icu"></a>
