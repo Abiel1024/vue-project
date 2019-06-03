@@ -1,2 +1,2 @@
 (window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-5dacea36"],{"1e4b":function(e,n,t){"use strict";t.r(n);var c=function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("div",{staticClass:"text",on:{click:e.fToHome}},[e._v("这里是首页，点击可跳转到home页面")])},o=[],a={name:"",data:function(){return{}},methods:{fToHome:function(){this.$router.push({name:"home"})}}},u=a,s=(t("8ec9"),t("2877")),i=Object(s["a"])(u,c,o,!1,null,"22b88ab5",null);n["default"]=i.exports},"8ec9":function(e,n,t){"use strict";var c=t("df2b"),o=t.n(c);o.a},df2b:function(e,n,t){}}]);
-//# sourceMappingURL=chunk-5dacea36.ec711f5e.js.map
+//# sourceMappingURL=chunk-5dacea36.de8f45b2.js.map
