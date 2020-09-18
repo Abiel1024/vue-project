@@ -4,10 +4,7 @@
       <span>用户姓名：</span>
       <span v-text="userInfo.name"></span>
     </p>
-    <Poptip trigger="hover" placement="bottom">
-      <Button type="primary" @click="getUserInfo">获取用户信息</Button>
-      <div slot="content">点击派发一个action，从而修改store中的值。</div>
-    </Poptip>
+    <Button type="primary" @click="getUserInfo">获取用户信息</Button>
     <Button type="primary" @click="fChangePath">跳转到operation</Button>
     <div class="test_class">
       <p>这里是p标签</p>
@@ -17,45 +14,42 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
-import { Poptip } from 'iview'
+import { defineComponent, computed } from 'vue';
+import { useStore } from 'vuex'
+import { useRouter } from 'vue-router'
 
-export default {
-  components: { Poptip },
+export default defineComponent({
   name: 'home',
-  data () {
-    return {}
-  },
-  computed: {
-    ...mapGetters({
-      userInfo: 'user/userInfo'
+  setup () {
+    const store = useStore()
+    const router = useRouter()
+    const userInfo = computed(() => {
+      return store.getters.userInfo
     })
-  },
-  methods: {
-    fChangePath () {
-      this.$router.push({
+    const fChangePath = () => {
+      router.push({
         name: 'operation'
       })
-    },
-    async getUserInfo () {
-      let result = await this.$store.dispatch('user/getUserInfo')
-      console.log(result)
     }
-  }
-}
+    const getUserInfo = () => {
+      store.dispatch('getUserInfo')
+    }
+    return { userInfo, fChangePath, getUserInfo }
+  },
+})
 </script>
 <style lang="less" scoped>
-  .content {
-    height: calc(100% - 60px);
-    background: #ddd;
-    text-align: center;
-    border: 1px solid transparent;
-  }
+.content {
+  height: calc(100% - 60px);
+  background: #ddd;
+  text-align: center;
+  border: 1px solid transparent;
+}
 
-  .user_name {
-    margin: 10px;
-    font-size: 20px;
-    color: #333;
-    font-weight: bolder;
-  }
+.user_name {
+  margin: 10px;
+  font-size: 20px;
+  color: #333;
+  font-weight: bolder;
+}
 </style>

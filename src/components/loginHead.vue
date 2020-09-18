@@ -3,30 +3,32 @@
 </template>
 
 <script>
-export default {
+import { defineComponent } from 'vue';
+import axios from "../util/axios";
+import { Message } from 'iview'
+
+export default defineComponent({
   name: 'loginHead',
-  data () {
-    return {}
-  },
-  methods: {
-    async fetchData () {
-      let params = {
+  setup () {
+    const fetchData = async () => {
+      const params = {
         sig: '1111',
         uid: '2222'
       }
-      const data = await this.$axios.get('public/getUserInfo', params)
-      if (data.code === 100000) {
-        this.$Message.success(data.msg)
+      const response = await axios.get('public/getUserInfo', params)
+      if (response.code === 100000) {
+        Message.success(response.msg)
       }
     }
+    fetchData()
   }
-}
+})
 </script>
 <style lang="less" scoped>
-  .header {
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
-    background: darkseagreen;
-  }
+.header {
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: darkseagreen;
+}
 </style>

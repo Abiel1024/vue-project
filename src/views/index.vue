@@ -3,29 +3,32 @@
 </template>
 
 <script>
-export default {
+import { defineComponent, ref, reactive } from 'vue';
+import { useRouter } from 'vue-router'
+
+export default defineComponent({
   name: '',
-  data () {
-    return {}
-  },
-  methods: {
-    fToHome () {
-      this.$router.push({
+  setup () {
+    const Router = useRouter()
+
+    const fToHome = () => {
+      Router.push({
         name: 'home'
       })
     }
-  }
-}
+    return { fToHome }
+  },
+})
 </script>
 <style lang="less" scoped>
-  .text {
-    font-size: 20px;
-    text-align: center;
-    margin: 50px 0;
-    cursor: pointer;
-  }
+.text {
+  font-size: 20px;
+  text-align: center;
+  margin: 50px 0;
+  cursor: pointer;
+}
 
-  .text:hover {
-    color: cornflowerblue;
-  }
+.text:hover {
+  color: cornflowerblue;
+}
 </style>
