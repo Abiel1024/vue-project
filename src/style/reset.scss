@@ -1,0 +1,128 @@
+/*css 初始化 */
+@charset "UTF-8";
+
+/*!*滚动条初始化*!*/
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  opacity: 0.2;
+}
+::-webkit-scrollbar-track-piece {
+  -webkit-border-radius: 10px;
+  opacity: 0.2;
+}
+::-webkit-scrollbar-thumb:vertical {
+  height: 6px;
+  background-color: #d3d4d5;
+  -webkit-border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:vertical:hover {
+  background-color: #a2a3a5;
+}
+::-webkit-scrollbar-thumb:horizontal {
+  width: 6px;
+  background-color: #d3d4d5;
+  -webkit-border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:horizontal:hover {
+  background-color: #a2a3a5;
+}
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+  margin: 0;
+  padding: 0;
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+fieldset, img {
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline-style: none;
+}
+ul, ol {
+  list-style: none;
+}
+input {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+select, input, textarea {
+  margin: 0;
+}
+/*防止拖动*/
+
+textarea {
+  resize: none;
+}
+/*  去掉图片低测默认的3像素空白缝隙*/
+
+img {
+  border: 0;
+}
+table {
+  border-collapse: collapse;
+}
+html, #app {
+  height: 100%;
+}
+body {
+  height: 100%;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", Arial, sans-serif;
+  line-height: 1.5;
+  color: #495060;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: block;
+}
+.clearfix:after {
+  clear: both;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 100%;
+}
+s, i, em {
+  font-style: normal;
+  text-decoration: none;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.cl {
+  clear: both;
+}
+input, textarea, keygen, select, button {
+  font-family: "Hiragino Sans GB", "Microsoft Yahei", SimSun, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.iconfont {
+  font-size: 14px;
+}
+.h100 {
+  height: 100%;
+}
+.w72 {
+  width: 72px;
+}

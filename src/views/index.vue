@@ -20,7 +20,7 @@ export default defineComponent({
   },
 })
 </script>
-<style lang="less" scoped>
+<style lang="scss" scoped>
 .text {
   font-size: 20px;
   text-align: center;

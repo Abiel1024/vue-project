@@ -5,7 +5,7 @@
 <script>
 import { defineComponent } from 'vue';
 import axios from "../util/axios";
-import { Message } from 'iview'
+import { ElMessage } from 'element-plus'
 
 export default defineComponent({
   name: 'loginHead',
@@ -17,14 +17,14 @@ export default defineComponent({
       }
       const response = await axios.get('public/getUserInfo', params)
       if (response.code === 100000) {
-        Message.success(response.msg)
+        ElMessage.success(response.msg)
       }
     }
     fetchData()
   }
 })
 </script>
-<style lang="less" scoped>
+<style lang="scss" scoped>
 .header {
   height: 60px;
   line-height: 60px;

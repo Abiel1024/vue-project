@@ -5,7 +5,7 @@
       <h6>这里是h6标签</h6>
     </div>
     <p>这里是operation page</p>
-    <Button type="primary" @click="fChangePath">返回home</Button>
+    <el-button type="primary" @click="fChangePath">返回home</el-button>
   </div>
 </template>
 
@@ -24,16 +24,16 @@ export default {
   }
 }
 </script>
-<style lang="less" scoped>
-  .content {
-    font-size: 20px;
-    text-align: center;
-  }
+<style lang="scss" scoped>
+.content {
+  font-size: 20px;
+  text-align: center;
+}
 
-  .test_class {
-    font-size: 20px;
-    p {
-      color: red;
-    }
+.test_class {
+  font-size: 20px;
+  p {
+    color: red;
   }
+}
 </style>

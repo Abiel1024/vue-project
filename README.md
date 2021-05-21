@@ -1,4 +1,4 @@
-# vue-less
+# vue-project
 
 ## Project setup
 ```

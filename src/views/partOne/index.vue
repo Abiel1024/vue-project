@@ -12,7 +12,7 @@ export default {
   components: { oneHead },
 }
 </script>
-<style lang="less" scoped>
+<style lang="scss" scoped>
   .main {
     height: 100%;
   }

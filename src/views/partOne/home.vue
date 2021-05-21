@@ -4,8 +4,8 @@
       <span>用户姓名：</span>
       <span v-text="userInfo.name"></span>
     </p>
-    <Button type="primary" @click="getUserInfo">获取用户信息</Button>
-    <Button type="primary" @click="fChangePath">跳转到operation</Button>
+    <el-button type="primary" @click="getUserInfo">获取用户信息</el-button>
+    <el-button type="primary" @click="fChangePath">跳转到operation</el-button>
     <div class="test_class">
       <p>这里是p标签</p>
       <h6>这里是h6标签</h6>
@@ -38,7 +38,7 @@ export default defineComponent({
   },
 })
 </script>
-<style lang="less" scoped>
+<style lang="scss" scoped>
 .content {
   height: calc(100% - 60px);
   background: #ddd;
